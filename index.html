@@ -1,4 +1,4 @@
-<html>
+<html onmouseover="getSelection">
     <head>
         <title>Tic-Tac-Toe on bald ps chars</title>
         <link href="style.css" type="text/css" rel="stylesheet">
@@ -23,12 +23,22 @@
                 <option value="Evan">Evan</option>
                 <option value="Felix">Felix</option>
                 <option value="Gion">Gion</option>
-                <option value="Leon">Leon</option>
-                <option value="Livio">Livio</option>
+                <option value="death">Godfreg</option>
+                <option value="death">Leon</option>
+                <option value="death">Livio</option>
                 <option value="Shao Long">Shao Long</option>
-                <option value="Shintarou">Shintarou</option>
+                <option value="death">Shintarou</option>
             </select>
-            <br> <br>
+            <br>
+            <button id="confirm" onclick="getSelection()"> Confirm selection </button>
+            <br>
+            <p>
+                so you have chosen:
+                <span class="selection"></span>
+            </p>
+            <br><br>
+            <button id="generate" onclick="generate()">Generate</button>
+            <br><br>
         </section>
         <img src="16.jpg">
         <br><br>

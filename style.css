@@ -12,6 +12,9 @@ h1{
 h2{
     font-family: "VT323";
 }
-span{
+ruby{
     padding: 35px;
+}
+p{
+    font-family: "VT323";
 }
