@@ -3,11 +3,11 @@ function getSelection() {
   var value = e.value;
 }
 
-function getSelection() {
+function getOption() {
     selectElement =
         document.querySelector('#char');
     output =
         selectElement.options
         [selectElement.selectedIndex].value;
-    document.querySelector('.selection').textContent = output;
+    document.querySelector('.output').textContent = output;
 }
