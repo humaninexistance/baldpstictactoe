@@ -11,11 +11,9 @@
         <h1>wanna play tic-tac-toe <br> on the foreheads of bald ps characters?</h1>
         <h2>If yes, you've come to the right place!<br>(if no, close this tab.)</h2>
         <section id="selection">
-            <label for="char">
-                Select which character's forehead <br> you would like to play tic tac toe on: 
-            </label>
-            <select name="char" id="char">
-                <option value="Albert">Albert</option>
+            <label>Select which character's forehead <br> you would like to play tic tac toe on:</label>
+    <select id="char">
+        <option value="Albert">Albert</option>
                 <option value="Alexis">Alexis</option>
                 <option value="Anubis">Anubis</option>
                 <option value="Charles">Charles</option>
@@ -28,17 +26,27 @@
                 <option value="death">Livio</option>
                 <option value="Shao Long">Shao Long</option>
                 <option value="death">Shintarou</option>
-            </select>
-            <br>
-            <button id="confirm" onclick="getSelection()"> Confirm selection </button>
-            <br>
-            <p>
-                so you have chosen:
-                <span class="selection"></span>
-            </p>
-            <br><br>
-            <button id="generate" onclick="generate()">Generate</button>
-            <br><br>
+    </select>
+
+    <button onclick="getOption()">
+        confirm selection
+    </button>
+
+    <p>
+        so you have chosen:
+        <span class="output"></span>
+    </p>
+
+    <script>
+        function getOption() {
+            selectElement =
+                document.querySelector('#char');
+            output =
+                selectElement.options
+                [selectElement.selectedIndex].value;
+            document.querySelector('.output').textContent = output;
+        }
+    </script>
         </section>
         <img src="16.jpg">
         <br><br>
